@@ -2,7 +2,7 @@
 
 ### Sobre:
 
-[Desafio](https://github.com/Rocketseat/bootcamp-gostack-desafio-01/blob/master/README.md#desafio-01-conceitos-do-nodejs)
+- [Desafio](https://github.com/Rocketseat/bootcamp-gostack-desafio-01/blob/master/README.md#desafio-01-conceitos-do-nodejs)
 
 ---
 
@@ -14,3 +14,7 @@
 ---
 
 ### Como rodar:
+
+- Primeiro clone o repositório ou faça download;
+- Rode no terminal:
+  `$ yarn`
