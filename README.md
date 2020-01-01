@@ -13,4 +13,4 @@
 
 ---
 
-### Como rodas:
+### Como rodar:
