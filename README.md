@@ -8,8 +8,9 @@
 
 ### Ferramentas utilizadas:
 
+- [Express](https://expressjs.com/)
+- [Nodemon](https://nodemon.io/)
+
 ---
 
 ### Como rodas:
-
-
