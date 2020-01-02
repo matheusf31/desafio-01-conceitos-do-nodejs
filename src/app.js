@@ -2,10 +2,12 @@ const express = require("express");
 
 const app = express();
 
-// para o express entender o json
+app.listen(3333);
 app.use(express.json());
 
 const projects = [];
+
+// ROTAS
 
 // listar todos os projetos
 app.get("/projects", (req, res) => {
@@ -40,6 +42,10 @@ app.put("/projects/:id", (req, res) => {
 
   const project = projects.find(e => e.id === id);
 
+  /**  
+    OBS.: isso altera o projects porque project recebeu uma REFERÊNCIA ao objeto projects 
+    (arrays, objetos e funções são passados como referêcia no javascript)
+  **/
   project.title = title;
 
   return res.json(project);
@@ -55,5 +61,3 @@ app.delete("/projects/:id", (req, res) => {
 
   return res.send();
 });
-
-app.listen(3333);
