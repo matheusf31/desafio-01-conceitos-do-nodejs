@@ -19,18 +19,30 @@
 ### Como rodar:
 
 - Primeiro clone o repositório ou faça download;
-- Abra a pasta do projeto e rode no terminal: 
-  
-  `$ yarn` 
-  
+- Abra a pasta do projeto e rode no terminal:
+
+  `$ yarn`
+
   `$ yarn dev`
-  
+
 - No insomnia, crie uma requisição (get, post, put, delete) e basta copiar as seguintes rotas:
-	
-	Método GET: http://localhost:3333/projects
-	
-	Método POST: http://localhost:3333/projects,
-		Colocar no body: {
-			"id": "2",
-			"title": "Novo projeto"
-		}
+
+      	Método GET (listar projetos): http://localhost:3333/projects
+
+      	Método POST (criar projetos): http://localhost:3333/projects,
+      		Colocar no body: {
+      				"id": "2",
+      				"title": "Novo projeto"
+      		}
+
+      	Método POST (criar tarefas): http://localhost:3333/projects/1/tasks,
+      		Colocar no body: {
+      				"title": "Novo tarefa"
+      		}
+
+      	Método PUT (atualizar projeto): http://localhost:3333/projects/1
+      		Colocar no body: {
+      				"title": "altera titulo"
+      		}
+
+      	Método DELETE (deletar projeto): http://localhost:3333/projects/1
